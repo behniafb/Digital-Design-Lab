@@ -1,18 +1,10 @@
-module pc(clk, reset, write, data_input, out);
-
-    input clk;
-    input reset;
-    input write;
-    input [63 : 0] data_input;
-
-    output reg [63 : 0] out;
-
-    always @(posedge clk)
-        begin
-            if(reset)
-                out = 0;
-            else
-            if (write)
-                out = data_input;
-        end
-endmodule;
+module clock(clk);
+    
+	output reg clk;
+	always begin
+		clk = 1'b1;
+		#100 clk = 1'b0;
+		#100;
+	end
+    
+endmodule
