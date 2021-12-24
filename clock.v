@@ -1,6 +1,4 @@
-module clock(clk);
-    
-	output reg clk;
+module clock(output reg clk);
 	always begin
 		clk = 1'b1;
 		#100 clk = 1'b0;

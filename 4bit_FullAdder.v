@@ -1,10 +1,6 @@
 `include "FullAdder.v"
 
-module FullAdder4(X, Y, CarryIn, Sum, CarryOut);
-    input wire [3:0] X, Y;
-    input wire CarryIn;
-    output [3:0] Sum;
-    output CarryOut;
+module FullAdder4(input wire [3:0] X, input wire [3:0] Y, input wire CarryIn, output [3:0] Sum, output CarryOut);
 
     wire [3:0] G, P;
     wire [2:0] Carry;

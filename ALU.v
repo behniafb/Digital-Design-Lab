@@ -1,9 +1,4 @@
-module ALU(input_data_1, input_data_2, alu_control, alu_result);
-
-  input [63 : 0] input_data_1;
-  input [63 : 0] input_data_2;
-	input [3:0] alu_control;
-  output reg [63 : 0] alu_result;
+module ALU(input [63 : 0] input_data_1, input [63 : 0] input_data_2, input [3:0] alu_control, output reg [63 : 0] alu_result);
 
 	always @(alu_control)
 		case (alu_control)

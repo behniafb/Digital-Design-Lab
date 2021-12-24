@@ -1,8 +1,4 @@
-module mux(input_0, input_1, select, out);
-
-	input select;
-  input [63 : 0] input_0, input_1;
-  output [63 : 0] out;
+module mux(input [63 : 0] input_0, input [63 : 0] input_1, input select, output [63 : 0] out);
 
 	assign out = select ? input_1 : input_0;
 

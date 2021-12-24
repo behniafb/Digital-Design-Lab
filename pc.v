@@ -1,11 +1,4 @@
-module pc(clk, reset, write, data_input, out);
-
-    input clk;
-    input reset;
-    input write;
-    input [63 : 0] data_input;
-
-    output reg [63 : 0] out;
+module pc(input clk, input reset, input write, input [63 : 0] data_input, output reg [63 : 0] out);
 
     always @(posedge clk)
         begin

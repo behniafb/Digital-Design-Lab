@@ -1,10 +1,6 @@
 `include "4bit_FullAdder.v"
 
-module FullAdder64(X, Y, CarryIn, Sum, CarryOut);
-    input wire [63:0] X, Y;
-    input wire CarryIn;
-    output [63:0] Sum;
-    output CarryOut;
+module FullAdder64(input wire [63:0] X, input wire [63:0] Y, input wire CarryIn, output [63:0] Sum, output CarryOut);
 
     wire [16:0] Carry;
     assign Carry[0] = CarryIn;

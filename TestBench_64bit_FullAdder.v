@@ -11,20 +11,20 @@ module FullAdder64_TB;
     initial
         begin
 
-            #10 assign x = 1;
+            #100 assign x = 1;
             assign y = 1;
             assign carryIn = 0;
-            #20 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
+            #100 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
 
-            #10 assign x = 200;
+            #100 assign x = 200;
             assign y = 400;
             assign carryIn = 0;
-            #20 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
+            #100 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
 
-            #10 assign x = 9999999;
+            #100 assign x = 9999999;
             assign y = 1;
             assign carryIn = 1;
-            #20 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
+            #100 $display("%0d + %0d + %0d = %0d;  Carry out = %0d", x, y, carryIn, sum, carryOut);
 
         end
 endmodule
