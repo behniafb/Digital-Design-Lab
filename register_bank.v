@@ -1,8 +1,7 @@
 module register_bank(clk, regWrite, read_register1, read_register2, write_register, write_data, read_data1, read_data2);
-  parameter n = 64;
 
   input clk;
-  reg [n - 1 : 0] registers[31 : 0];
+  reg [63 : 0] registers[31 : 0];
   input regWrite;
   input [4 : 0] read_register1;
   input [4 : 0] read_register2;
