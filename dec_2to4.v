@@ -1,4 +1,4 @@
-module dec2_4 (input En, input [1:0] encoded, output reg [0:3] decoded);
+module dec_2to4 (input En, input [1:0] encoded, output reg [0:3] decoded);
 
   always @(En, encoded)
     case ({En, encoded})
