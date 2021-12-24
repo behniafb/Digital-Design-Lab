@@ -1,3 +1,5 @@
+`include "dec_2to4.v"
+
 module dec_4to16 (input En, input [3:0] encoded , output [0:15] decoded);
 
   wire [0:3] temp;
