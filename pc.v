@@ -1,12 +1,11 @@
 module pc(clk, reset, write, data_input, out);
-    parameter n = 64;
 
     input clk;
     input reset;
     input write;
-    input [n - 1 : 0] data_input;
+    input [63 : 0] data_input;
 
-    output reg [n - 1 : 0] out;
+    output reg [63 : 0] out;
 
     always @(posedge clk)
         begin
