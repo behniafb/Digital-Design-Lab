@@ -4,15 +4,15 @@
 `include "sign_extend.v"
 `include "pc.v"
 `include "register_bank.v"
-`include "memory.v"
+`include "data_memory.v"
 `include "instruction_memory.v"
 `include "ALU.v"
 `include "ALU_control.v"
 `include "Clock.v"
-`include "control.v"
+`include "Control.v"
 
 
-module cpu();
+module SS_CPU();
 
 	wire clk;
 	wire memRead;
@@ -76,5 +76,6 @@ module cpu();
 
 	// Mux of Memory
 	mux multiplexer3(read_data, alu_out, memToReg, data_write_register);
+
 
 endmodule;

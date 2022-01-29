@@ -11,7 +11,7 @@ module instruction_memory(input clk, input [63 : 0] read_address, output [31 : 0
 
    always @(posedge clk)
         begin
-            instruction <= instructions[read_address]
+            instruction <= instructions[read_address];
         end
 
 endmodule;
